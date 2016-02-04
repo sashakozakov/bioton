@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="ru" >
+
+<head>
+  <meta charset="utf-8">
+  <!-- If you delete this meta tag World War Z will become a reality -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+
+  <link rel="icon" href="favicon.png"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-angle-left" viewBox="0 0 366 1024">
+        <title>angle-left</title>
+        <path class="path1" d="M358.286 310.857q0 7.429-5.714 13.143l-224.571 224.571 224.571 224.571q5.714 5.714 5.714 13.143t-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>
+      </symbol>
+      <symbol id="icon-angle-right" viewBox="0 0 366 1024">
+        <title>angle-right</title>
+        <path class="path1" d="M340 548.571q0 7.429-5.714 13.143l-266.286 266.286q-5.714 5.714-13.143 5.714t-13.143-5.714l-28.571-28.571q-5.714-5.714-5.714-13.143t5.714-13.143l224.571-224.571-224.571-224.571q-5.714-5.714-5.714-13.143t5.714-13.143l28.571-28.571q5.714-5.714 13.143-5.714t13.143 5.714l266.286 266.286q5.714 5.714 5.714 13.143z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+
+
+  <!-- body content here -->
+  <header class="header">
+    <div class="row">
+      <div class="columns">
+        <nav class="top-bar" data-topbar>
+
+          <ul class="title-area header__logo">
+            <li class="name">
+              <a href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="201" height="48" viewBox="0 0 201 48">
+                  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMkAAAAwCAMAAACMha7mAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAADAFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAHgy0aAAAA/nRSTlMA+O7RrH87A01wPwItXoSft8DI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" width="201" height="48"/>
+                </svg>
+              </a>
+            </li>
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+          </ul>
+          <section class="top-bar-section">
+            <ul class="right">
+              <li class="active"><a href="index.html">Главная</a></li>
+              <li><a href="about.html" class="main-menu">О фирме</a></li>
+              <li><a href="#" class="main-menu">Уголок покупателя</a></li>
+              <li><a href="price.html" class="main-menu">Прайс</a></li>
+              <li><a href="#" class="main-menu">Новинки</a></li>
+              <li><a href="contacts.html" class="main-menu">Контакты</a></li>
+              <li class="hide-for-small" style="margin:0;"><a href="#" class="main-menu"></a></li>
+              <li class="li-lang"><a href="#" class="lang">RU</a></li>
+              <li class="li-lang"><a href="#" class="lang">EN</a></li>
+            </ul>
+            <div class="icons">
+              <ul>
+                <li><a href="#"><img class="icon" src="img/Facebook.png" height="22" width="11" alt="Facebook"></a></li>
+                <li><a href="#"><img class="icon" src="img/Twitter.png" height="22" width="21" alt="Twitter"></a></li>
+                <li><a href="#"><img class="icon" src="img/Google.png" height="23" width="23" alt="Google+"></a></li>
+                <li><a href="#"><img class="icon" src="img/Pinterest.png" height="21" width="20" alt="Pinterest"></a></li>
+                <li><a href="#"><img class="icon" src="img/Skype.png" height="22" width="21" alt="Skype"></a></li>
+              </ul>
+            </div>
+          </section>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <!--  BEGIN banner  -->
+  <section class="banner">
+    <div class="row">
+      <div class="columns">
+       <div class="text-block">
+        <h1 class="banner__title">Косметическая компания</h1>
+        <h2 class="banner__subtitle">The World's Presonal Fundraising Websites.</h2>
+        <div class="count"><span>Over $1 Billion Raised!</span></div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- END banner -->
+
+<!--  START FEATURES  -->
+<div class="feature">
+  <div class="row features">
+    <div class="columns large-3 medium-6 features_padd">
+      <h4 class="feature__title">НОВИНКА</h4>
+      <div class="feature__block">
+        <a href="#" class="feature__subtitle">Соли для ванн</a>
+        <a href="#"><img src="img/feature.jpg" class="feature__img" alt="Соли для ванн"></a>
+        <p class="feature__text">Бальзам-ополаскиватель для всех типов волос</p>
+      </div>
+    </div>
+
+    <div class="columns large-3 medium-6 features_padd">
+      <h4 class="feature__title">НОВИНКА</h4>
+      <div class="feature__block">
+        <a href="#" class="feature__subtitle">Бальзамы</a>
+        <a href="#"><img src="img/feature.jpg" class="feature__img" alt="Соли для ванн"></a>
+        <p class="feature__text">Бальзам-ополаскиватель для всех типов волос</p>
+      </div>
+    </div>
+
+    <div class="columns large-3 medium-6 features_padd">
+      <h4 class="feature__title">НОВИНКА</h4>
+      <div class="feature__block">
+        <a href="#" class="feature__subtitle">Жидкое мыло</a>
+        <a href="#"><img src="img/feature.jpg" class="feature__img" alt="Соли для ванн"></a>
+        <p class="feature__text">Бальзам-ополаскиватель для всех типов волос</p>
+      </div>
+    </div>
+
+    <div class="columns large-3 medium-6 features_padd">
+      <h4 class="feature__title">НОВИНКА</h4>
+      <div class="feature__block">
+        <a href="#" class="feature__subtitle">Бальзамы</a>
+        <a href="#"><img src="img/feature.jpg" class="feature__img" alt="Соли для ванн"></a>
+        <p class="feature__text">Бальзам-ополаскиватель для всех типов волос</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END FEATURES -->
+
+<!-- BEGIN products  -->
+<section class="products">
+  <h2 class="section-title"><span>Продукция</span></h2>
+
+  <div class="row row-products">
+
+    <div class="columns medium-12 large-4">
+        <div class="image-block">
+          <a href="#"><img class="products__img" src="img/product1.jpg" alt="Product 1"></a>
+        </div>
+        <a href="#" class="product__title">Косметика для детей </a>
+    </div>
+    <div class="columns medium-12 large-4">
+        <div class="image-block">
+          <a href="#"><img class="products__img" src="img/product2.jpg" alt="Product 2"></a>
+        </div>
+        <a href="#" class="product__title">Косметические серии</a>
+      </div>
+    <div class="columns medium-12 large-4">
+        <div class="image-block">
+          <a href="#"><img class="products__img" src="img/product3.jpg" alt="Product 3"></a>
+        </div>
+        <a href="#" class="product__title">Декоративная косметика</a>
+      </div>
+    </div>
+
+    <div class="row row-products">
+      <div class="columns  medium-12 large-4">
+
+        <div class="image-block">
+          <a href="#"><img class="products__img" src="img/product4.jpg" alt="Product 4"></a>
+        </div>
+        <a href="#" class="product__title">
+          Средства для депиляции</a>
+        </div>
+        <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product5.jpg" alt="Product 5"></a>
+          </div>
+          <a href="#" class="product__title">Лечебно-профилактическая косметика</a>
+        </div>
+        <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product6.jpg" alt="Product 6"></a>
+          </div>
+          <a href="#" class="product__title">Соли для ванн</a>
+        </div>
+      </div>
+
+      <div class="row row-products">
+        <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product7.jpg" alt="Product 7"></a>
+          </div>
+          <a href="#" class="product__title">Жидкое косметическое мыло</a>
+        </div>
+        <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product8.jpg" alt="Product 8"></a>
+          </div>
+          <a href="#" class="product__title">Средства по уходу за волосами</a>
+        </div>
+        <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product9.jpg" alt="Product 9"></a>
+          </div>
+          <a href="#" class="product__title">Подарочные наборы</a>
+        </div>
+      </div>
+
+    <div class="row row-products">
+      <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product7.jpg" alt="Product 10"></a>
+          </div>
+          <a href="#" class="product__title">Бытовая химия</a>
+        </div>
+            <div class="columns  medium-12 large-4">
+
+          <div class="image-block">
+            <a href="#"><img class="products__img" src="img/product8.jpg" alt="Product 11"></a>
+          </div>
+          <a href="#" class="product__title">Серия для мужчин</a>
+        </div>
+            <div class="columns  medium-12 large-4">
+        <div class="hide-for-small"></div>
+      </div>
+  </div> <!-- end row -->
+</section>
+<!-- END products -->
+
+
+  <!-- BEGIN advices  -->
+  <section class="advices">
+    <div class="row">
+      <div class="columns">
+        <h2 class="section-title"><span>Полезные советы</span></h2>
+        <h3 class="advices__subtitle">рекосендации наших специольсты о полезности продукции “Bioton”</h3>
+      </div>
+      <div class="columns">
+        <div class="ba-team-slider">
+          <!-- BEGIN slick-slide  -->
+          <div class="slider"> <!-- slide 1 -->
+            <div class="advice__block">
+              <div class="advice__img">
+                <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+              </div>
+              <div class="advice__description">
+                <h4>Детский крем </h4>
+                <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+                <a href="#" class="btn-more">Читать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider"> <!-- slide 2 -->
+            <div class="advice__block">
+              <div class="advice__img">
+                <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+              </div>
+              <div class="advice__description">
+                <h4>Детский крем </h4>
+                <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+                <a href="#" class="btn-more">Читать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider"> <!-- slide 3 -->
+            <div class="advice__block">
+              <div class="advice__img">
+                <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+              </div>
+              <div class="advice__description">
+                <h4>Детский крем </h4>
+                <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+                <a href="#" class="btn-more">Читать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider"> <!-- slide 4 -->
+            <div class="advice__block">
+              <div class="advice__img">
+                <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+              </div>
+              <div class="advice__description">
+                <h4>Детский крем </h4>
+                <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+                <a href="#" class="btn-more">Читать больше</a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- END slick-slide -->
+            <div class="slick-prev"></div>
+            <div class="slick-next"></div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- END advices  -->
+
+
+
+<!--  BEGIN news -->
+<section class="news">
+  <div class="row">
+    <div class="columns">
+      <h2 class="section-title"><span>Новости</span></h2>
+      <h3 class="advices__subtitle">последние события</h3>
+    </div>
+    <div class="columns">
+      <div class="slider-block">
+        <div class="news-slider">
+          <!-- BEGIN slick-slide  -->
+          <div class="news-slider news-slide"> <!-- slide 1 -->
+            <div class="time">12.07.2015</div>
+            <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+            <p>В сентябре наша компания провела первую
+              всеукраинскую конференцию дистрибуторов
+              ТМ "Биотон".</p>
+              <div class="hidden-text">
+                <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                <a href="#" class="btn-more">Читать больше</a>
+              </div>
+            </div>
+            <div class="news-slide"> <!-- slide 2 -->
+              <div class="time">02.07.2015</div>
+              <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+              <p>В сентябре наша компания провела первую
+                всеукраинскую конференцию дистрибуторов
+                ТМ "Биотон".</p>
+                <div class="hidden-text">
+                  <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                  <a href="#" class="btn-more">Читать больше</a>
+                </div>
+              </div>
+              <div class="news-slide"> <!-- slide 3 -->
+                <div class="time">21.01.2015</div>
+                <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+                <p>В сентябре наша компания провела первую
+                  всеукраинскую конференцию дистрибуторов
+                  ТМ "Биотон".</p>
+                  <div class="hidden-text">
+                    <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                    <a href="#" class="btn-more">Читать больше</a>
+                  </div>
+              </div>
+              <div class="news-slide"> <!-- slide 4 -->
+                <div class="time">12.07.2014</div>
+                <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+                <p>В сентябре наша компания провела первую
+                  всеукраинскую конференцию дистрибуторов
+                  ТМ "Биотон".</p>
+                  <div class="hidden-text">
+                    <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                    <a href="#" class="btn-more">Читать больше</a>
+                  </div>
+                </div>
+                <div class="news-slide"> <!-- slide 5 -->
+                  <div class="time">08.11.2015</div>
+                  <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+                  <p>В сентябре наша компания провела первую
+                    всеукраинскую конференцию дистрибуторов
+                    ТМ "Биотон".</p>
+                    <div class="hidden-text">
+                      <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                      <a href="#" class="btn-more">Читать больше</a>
+                    </div>
+                  </div>
+                  <div class="news-slide"> <!-- slide 6 -->
+                    <div class="time">10.09.2015</div>
+                    <div class="ba-image"><img src="img/news.jpg" alt="news 1"></div>
+                    <p>В сентябре наша компания провела первую
+                      всеукраинскую конференцию дистрибуторов
+                      ТМ "Биотон".</p>
+                      <div class="hidden-text">
+                        <span>7 – 9 сентября 2007 года компания «Биотон» на базе санатория «Утес» провела первую всеукраинскую конференцию, в которой приняли участие двадцать один представитель дистрибуторов со всех уголков Украины.</span>
+                        <a href="#" class="btn-more">Читать больше</a>
+                      </div>
+                      </div>
+              <!-- END slick-slide -->
+              <div class="slick-prev2"></div>
+            <div class="slick-next2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- END news -->
+
+
+<!-- BEGIN address  -->
+<section class="address">
+  <div class="row">
+    <div class="columns">
+      <h2 class="address__title">
+        <span>Адрес</span>
+      </h2>
+    </div>
+  </div>
+  <div id="map" class="address__map"></div>
+</section>
+<!-- END address -->
+
+
+<!-- BEGIN partners  -->
+<section class="partners">
+  <div class="row">
+    <div class="columns">
+      <h2 class="partners__title">ПАРТНЁРЫ</h2>
+      <div class="partners__logo"></div>
+    </div>
+    <div class="columns">
+      <ul class="parners-list">
+        <li>
+          <img src="img/Sarma.png" height="35" width="165" alt="Sarma">
+        </li>
+        <li>
+          <img src="img/shik.png" height="62" width="68" alt="Шик">
+        </li>
+        <li>
+          <img src="img/henkel.png" height="96" width="172" alt="Henkel">
+        </li>
+        <li>
+          <img src="img/lotos.png" height="105" width="111" alt="Lotos">
+        </li>
+        <li>
+          <img src="img/shik.png" height="62" width="68" alt="Шик">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- END partners -->
+
+<footer class="footer">
+  <div class="row">
+    <div class="columns">
+      <p class="footer__text">
+        &copy; 2015 Натуральная косметика Биотон - качество и разумная цена!
+      </p>
+      <p class="footer__text">
+        Создание сайта RGG-Design
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+
+
+<!-- <script src="js/jquery-1.11.3.min.js"></script> -->
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATayeFAABLsTb_90uyro3bSSookvEUJ7k&signed_in=true&callback=initMap"></script>
+<script>
+  $(document).foundation();
+</script>
+</body>
+</html>

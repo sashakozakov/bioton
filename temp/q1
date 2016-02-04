@@ -1,0 +1,88 @@
+ <div class="ba-team-slider">
+    <!-- BEGIN slick-slide  -->
+    <div class="slider"> <!-- slide 1 -->
+      <div class="row" style="display:flex;">
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Не детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Совсем не детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider"> <!-- slide 2 -->
+      <div class="row" style="display:flex;">
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Не детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение, и предотвращает появление опрелостей.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-4 small-12 columns nopad">
+          <div class="advice__block">
+            <div class="advice__img">
+              <img src="img/children-wallpaper-www.1366x768.ru.jpg" alt="Детский крем">
+            </div>
+            <div class="advice__description">
+              <h4>Совсем не детский крем </h4>
+              <p>Крем обладает приятной легкой текстурой, благодаря которой он легко наносится на кожу детей и младенцев, обеспечивая увлажнение.</p>
+              <a href="#" class="btn-more">Читать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END slick-slide -->
+    <svg class="slick-prev"><use xlink:href="#icon-angle-left"></svg>
+    <svg class="slick-next"><use xlink:href="#icon-angle-right"></svg>
+
+
+  </div>
